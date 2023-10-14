@@ -1,0 +1,51 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>TEXT EDITER</title>
+    <link rel="stylesheet" href="style.css">
+<body>
+    <div class="body">
+        <div id="commentbox"></div>
+        <button id="bold" onclick="f1()">Bold</button>
+        <button class="italic" onclick="f2()">Italic</button>
+        <button class="underline" onclick="f3()">Underline</button> 
+        <button class="lowercase" onclick="f5()">Lowercase</button>
+        <button class="uppercase" onclick="f4()">Uppercase</button>
+        <label for="font" id="font">font-family  :    
+        <select class="font" onchange="f6(this);">
+            <option value="Arial" selected="selected">Arial</option>
+            <option value="Georgia">Georgia</option>
+            <option value="Times New Roman">Times new Roman</option>
+            <option value="Courier New">Courier New</option>
+            <option value="Trebuchet MS">Trebuchet MS</option>
+        </select>
+        <input id="font-size" type="number" size="16" min="1" max="100" onchange="f8()">
+        <input id="color" type="color" onchange="f7()" >
+        
+        </label>
+        <label id="search">
+            <input id="text" type="text" size="30" placeholder="Search here....">
+            <button class="searched" onclick="f10()">search</button> 
+        </label>
+        
+        <label for="comment"><b>TEXT EDITER</b></label>
+        <textarea id="comment" name="comment" rows="20" cols="60" placeholder="write here....." onkeyup="f9()"></textarea>
+          <p id="wordcount" ></p>
+          <p id="sencount" > </p>
+          <p id="charcount"></p>
+          <p id="time"></p>
+          <p id="para-print"></p>
+        
+        
+    </div>
+
+    <script src="index.js">
+
+    </script>
+
+
+</body>
+</html>
